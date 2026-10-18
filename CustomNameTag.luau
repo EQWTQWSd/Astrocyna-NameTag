@@ -263,7 +263,8 @@ task.spawn(function()
                     local calculatedScale = refDist / math.max(dist, 1)
                     uiScale.Scale = math.clamp(calculatedScale, minS, maxS)
                 end
-            end)\n            table.insert(Connections, scaleConn)
+            end)
+            table.insert(Connections, scaleConn)
         end
 
         -- Bevel Gradient เธเธเธเธฅเนเธญเธ HUD
