@@ -41,7 +41,7 @@ local DefaultConfig = {
         BackgroundTransparency = 0.15,                 -- เธเธงเธฒเธกเนเธเธฃเนเธเนเธชเธเธญเธเธเธทเนเธเธซเธฅเธฑเธ
         CornerRadius = 10,                             -- เธเธงเธฒเธกเนเธเนเธเธกเธเธเธญเธเธเธญเธเธเธฅเนเธญเธ (UICorner)
         
-        -- เธเธฒเธฃเน€เธงเนเธเธฃเธฐเธขเธฐเธ เธฒเธขเนเธเธเธฃเธญเธ (Padding & Spacing)
+        -- เธเธฒเธฃเน€เธงเนเธเธฃเธฐเธขเธฐเธ เธฒเธขเนเธเธเธฃเธญเธ (Padding & Spacing)
         PaddingHorizontal = 18,                        -- เธฃเธฐเธขเธฐเธซเนเธฒเธเธเธญเธเธเนเธฒเธข-เธเธงเธฒ
         PaddingVertical = 8,                           -- เธฃเธฐเธขเธฐเธซเนเธฒเธเธเธญเธเธเธ-เธฅเนเธฒเธ
         Spacing = 14,                                  -- เธฃเธฐเธขเธฐเธซเนเธฒเธเธฃเธฐเธซเธงเนเธฒเธ [เนเธญเธเธญเธ] เธเธฑเธ [เธเนเธญเธเธงเธฒเธก]
@@ -126,7 +126,7 @@ if typeof(Args) == "table" then
 end
 
 -- ===================================================================
--- ๐ ๏ธ SYSTEM CORE & LOGIC (Non-blocking Thread)
+-- ๐ ๏ธ SYSTEM CORE & LOGIC (Non-blocking Thread)
 -- ===================================================================
 
 task.spawn(function()
@@ -164,7 +164,7 @@ task.spawn(function()
     local ActiveTags = {}
     local Connections = {}
 
-    -- เธเธฑเธเธเนเธเธฑเธเธ”เธถเธเธฃเธนเธเธ เธฒเธเธเธฒเธ Potassium / Executor workspace
+    -- เธเธฑเธเธเนเธเธฑเธเธ”เธถเธเธฃเธนเธเธ เธฒเธเธเธฒเธ Potassium / Executor workspace
     local function resolveAsset(path)
         if type(path) == "string" and (path:match("^rbxasset") or path:match("^http")) then
             return path
@@ -601,4 +601,3 @@ task.spawn(function()
 end)
 
 return true
-
